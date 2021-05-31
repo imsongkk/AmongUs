@@ -114,10 +114,10 @@ TextureImporter:
       name: use
       rect:
         serializedVersion: 2
-        x: 229
-        y: 287
-        width: 113
-        height: 112
+        x: 230
+        y: 288
+        width: 111
+        height: 110
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,10 +135,10 @@ TextureImporter:
       name: report
       rect:
         serializedVersion: 2
-        x: 115
-        y: 287
-        width: 113
-        height: 112
+        x: 116
+        y: 288
+        width: 111
+        height: 110
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: setting
       rect:
         serializedVersion: 2
-        x: 133
-        y: 466
-        width: 65
-        height: 65
+        x: 134
+        y: 467
+        width: 63
+        height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,12 +177,12 @@ TextureImporter:
       name: map
       rect:
         serializedVersion: 2
-        x: 265
-        y: 466
-        width: 65
-        height: 65
+        x: 266
+        y: 467
+        width: 63
+        height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

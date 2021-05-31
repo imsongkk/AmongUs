@@ -40,4 +40,22 @@ public class PlayerMove : MonoBehaviour
         }
         transform.position += dir * speed * Time.deltaTime;
     }
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+        IInteractable target = collision.gameObject.GetComponent<IInteractable>();
+        if(target != null)
+		{
+            target.SwitchUseButton(true);
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+        IInteractable target = collision.gameObject.GetComponent<IInteractable>();
+        if (target != null)
+        {
+            target.SwitchUseButton(false);
+        }
+    }
 }
