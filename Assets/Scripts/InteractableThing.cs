@@ -3,41 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InteractableThing : MonoBehaviour, IInteractable
+public abstract class InteractableThing : MonoBehaviour
 {
-    public GameObject useButton;
-    public Animator anim;
-    public bool isInteracting = false;
-    void Awake()
+	public IAnim anim;
+	public Button useButton;
+	abstract public void PerformEvent();
+    public void SetActiveUseButton(bool isTrue)
 	{
-        anim = gameObject.GetComponentInParent<Animator>();
-        useButton.GetComponent<Button>().onClick.AddListener(Interact);
-    }
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //isInteracting = anim.GetBool("isPlayerInteract");
-        //anim.
-    }
-
-    public void Interact()
+		useButton.interactable = isTrue;
+	}
+	public void PerformAnim()
 	{
-        if (isInteracting)
-            return;
-        //print("@");
-        //print(anim == null);
-        anim.SetTrigger("Interact");
-        //anim.SetBool("isPlayerInteract", true);
-        //anim.SetBool("isPlayerInteract", false);
-    }
+		anim.Play();
+	}
+}
 
-    public void SwitchUseButton(bool isActive)
+public class Vent : InteractableThing
+{
+	private void Awake()
 	{
-        useButton.GetComponent<Button>().interactable = isActive;
-    }
+		gameObject.AddComponent<AnimVent>();
+	}
+	public override void PerformEvent() // 유저가 Vent랑 Interact했을 때 실행 되어야 할 이벤트
+	{
+
+	}
 }

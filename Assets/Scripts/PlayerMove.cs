@@ -25,7 +25,7 @@ public class PlayerMove : MonoBehaviour
             anim.SetBool("isStopped", true); // -> Idle 재생
         else
             anim.SetBool("isStopped", false); // -> Walk 재생
-        if(dir.x >= 0)
+        if(dir.x > 0)
         {
             if (dir.magnitude != 0)
             {
@@ -33,7 +33,7 @@ public class PlayerMove : MonoBehaviour
                 isRight = true;
             }
         }
-        else
+        else if(dir.x < 0)
         {
             transform.localScale = new Vector3(-playerXSize, playerYSize, 1);
             isRight = false;
@@ -43,19 +43,13 @@ public class PlayerMove : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-        IInteractable target = collision.gameObject.GetComponent<IInteractable>();
-        if(target != null)
-		{
-            target.SwitchUseButton(true);
-		}
+        InteractableThing target = collision.gameObject.GetComponent<InteractableThing>();
+        print(target == null);
+        //InteractableThing target = collision.gameObject;
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-        IInteractable target = collision.gameObject.GetComponent<IInteractable>();
-        if (target != null)
-        {
-            target.SwitchUseButton(false);
-        }
+        
     }
 }
