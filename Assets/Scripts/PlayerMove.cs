@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float speed = 2f;
-    public float playerXSize = 0.5f;
-    public float playerYSize = 0.5f;
+    public float playerXSize = 0.36f;
+    public float playerYSize = 0.36f;
     public bool isRight = true;
     Animator anim;
     // Start is called before the first frame update

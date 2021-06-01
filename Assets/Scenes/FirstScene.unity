@@ -399,7 +399,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1210002808}
+      - m_Target: {fileID: 1425632023}
         m_MethodName: UpdateTopButton
         m_Mode: 3
         m_Arguments:
@@ -536,11 +536,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: "\uD55C\uAD6D\uC5B4"
       m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: English
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -971,7 +969,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option A
+  m_Text: "\uD55C\uAD6D\uC5B4"
 --- !u!222 &303308966
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1381,7 +1379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &518460612
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7111,7 +7109,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1210002808}
+      - m_Target: {fileID: 1425632023}
         m_MethodName: UpdateControlButton
         m_Mode: 3
         m_Arguments:
@@ -7528,7 +7526,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1210002808}
+      - m_Target: {fileID: 1425632023}
         m_MethodName: UpdateSoundValue
         m_Mode: 1
         m_Arguments:
@@ -7628,7 +7626,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1210002808}
+      - m_Target: {fileID: 1425632023}
         m_MethodName: UpdateSoundValue
         m_Mode: 1
         m_Arguments:
@@ -8299,17 +8297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingMenu: {fileID: 1425632020}
-  topMenuButton:
-  - {fileID: 1460788611}
-  - {fileID: 55365547}
-  topMenu:
-  - {fileID: 370164798}
-  - {fileID: 518460611}
-  controlButton:
-  - {fileID: 821625714}
-  - {fileID: 1406719238}
-  Effect: {fileID: 964044489}
-  BGM: {fileID: 911838766}
+  anim: {fileID: 1425632022}
 --- !u!4 &1210002809
 Transform:
   m_ObjectHideFlags: 0
@@ -8610,7 +8598,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1210002808}
+      - m_Target: {fileID: 1425632023}
         m_MethodName: UpdateControlButton
         m_Mode: 3
         m_Arguments:
@@ -8667,13 +8655,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1425632021}
+  - component: {fileID: 1425632022}
+  - component: {fileID: 1425632023}
   m_Layer: 5
   m_Name: SettingUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1425632021
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8695,6 +8685,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1425632022
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425632020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: da440354d435d7f47b5492d378332e37, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1425632023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425632020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c7a4bf05bd8054582c1de44a740772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topMenuButton:
+  - {fileID: 1460788611}
+  - {fileID: 55365547}
+  topMenu:
+  - {fileID: 370164798}
+  - {fileID: 518460611}
+  controlButton:
+  - {fileID: 821625714}
+  - {fileID: 1406719238}
+  Effect: {fileID: 964044489}
+  BGM: {fileID: 911838766}
+  anim: {fileID: 1425632022}
 --- !u!1 &1429965375
 GameObject:
   m_ObjectHideFlags: 0
@@ -8970,7 +9003,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1210002808}
+      - m_Target: {fileID: 1425632023}
         m_MethodName: UpdateTopButton
         m_Mode: 3
         m_Arguments:
