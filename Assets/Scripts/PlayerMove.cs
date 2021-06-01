@@ -43,8 +43,9 @@ public class PlayerMove : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-        InteractableThing target = collision.gameObject.GetComponent<InteractableThing>();
-        print(target == null);
+        print(collision.gameObject.GetType());
+        //InteractableThing target = collision.gameObject.GetComponent<InteractableThing>();
+        //print(target == null);
         //InteractableThing target = collision.gameObject;
 	}
 
