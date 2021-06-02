@@ -19,7 +19,6 @@ public class Minimap : MonoBehaviour
 
     public void OnButtonClick()
     {
-        print(target.activeSelf);
         if (target.activeSelf)
             target.SetActive(false);
         else

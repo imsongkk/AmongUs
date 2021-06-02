@@ -1,39 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MinimapPlayerMove : MonoBehaviour
 {
-    public GameObject map;
-    public GameObject player;
-    public GameObject minimap;
-    private Vector2 mapCenterPos;
-    private Vector2 playerPos;
-    private Vector2 udPlayerPos; // 맵의 중앙으로부터 얼마만큼의 Unit Distance만큼 떨어져 있는지,
-    private Rect minimapRect;
+	public Transform top, bottom, right, left;
+	public Transform player;
+	private Vector2 playerPos;
+	public Image miniMap;
+	public Image miniPlayer;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        mapCenterPos = map.transform.position;
-        playerPos = player.transform.position;
-        minimapRect = minimap.GetComponent<RectTransform>().rect;
-    }
+	private void OnEnable()
+	{
+		UpdatePos();
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        playerPos = player.transform.position;
-        udPlayerPos = playerPos - mapCenterPos;
-        //print(map.GetComponent<SpriteRenderer>().size);
-        //print(udPlayerPos); //3.9 2.6
-        //print(transform.GetComponent<RectTransform>().position); 
-        Vector3 temp = transform.GetComponent<RectTransform>().position;
-        //print(temp); // 960, 590
-        //print(mapCenterPos); // -0.8, 0.9
-        //temp.x += udPlayerPos.x * 100;
-        //temp.y += udPlayerPos.y * 100;
-        transform.GetComponent<RectTransform>().position = new Vector3(960 + udPlayerPos.x * 100, 590 + udPlayerPos.y * 100, 0f);
-        //transform.GetComponent<RectTransform>().position = temp;
-    }
+	private void Update()
+	{
+		UpdatePos();
+	}
+
+	private void UpdatePos()
+	{
+		Vector2 area = new Vector2(Vector2.Distance(left.position, right.position), Vector2.Distance(bottom.position, top.position)); // 20.8, 11.6
+		Vector2 cPos = new Vector2(Vector2.Distance(left.position, new Vector2(player.transform.position.x, 0f)),
+			Vector2.Distance(bottom.position, new Vector2(0f, player.transform.position.y)));
+		Vector2 temp = new Vector2(cPos.x / area.x, cPos.y / area.y); // 비율
+		miniPlayer.rectTransform.anchoredPosition = new Vector2(miniMap.rectTransform.sizeDelta.x * temp.x, miniMap.rectTransform.sizeDelta.y * temp.y);
+	}
 }

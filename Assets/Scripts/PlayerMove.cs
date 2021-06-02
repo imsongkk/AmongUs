@@ -8,7 +8,8 @@ public class PlayerMove : MonoBehaviour
     public float playerXSize = 0.36f;
     public float playerYSize = 0.36f;
     public bool isRight = true;
-    Animator anim;
+    private Animator anim;
+    public GameObject map;
     // Start is called before the first frame update
     void Start()
     {
