@@ -7,6 +7,16 @@ public interface IAnim
     void Play();
 }
 
+public class A : MonoBehaviour
+{
+
+}
+
+public class B : MonoBehaviour
+{
+
+}
+/*
 public class AnimVent : MonoBehaviour, IAnim
 {
 	public void Play()
@@ -14,3 +24,4 @@ public class AnimVent : MonoBehaviour, IAnim
 		print("A");
 	}
 }
+*/

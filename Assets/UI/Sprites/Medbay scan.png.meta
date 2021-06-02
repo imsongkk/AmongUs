@@ -1,7 +1,64 @@
 fileFormatVersion: 2
 guid: d68a6f6432c2e2245a7d5e4ab42c6d64
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6345250399971470507
+    second: Medbay scan_0
+  - first:
+      213: -7000511136542134512
+    second: Medbay scan_10
+  - first:
+      213: 6767124119132651259
+    second: Medbay scan_11
+  - first:
+      213: -2575271954450598604
+    second: Medbay scan_12
+  - first:
+      213: 2578302726775250418
+    second: Medbay scan_13
+  - first:
+      213: -841698660474708280
+    second: Medbay scan_14
+  - first:
+      213: -2375646219978362088
+    second: Medbay scan_15
+  - first:
+      213: 3107067037684591050
+    second: Medbay scan_16
+  - first:
+      213: -8577026757951819936
+    second: Medbay scan_17
+  - first:
+      213: -383021938504546638
+    second: Medbay scan_18
+  - first:
+      213: -4260963343967073641
+    second: Medbay scan_19
+  - first:
+      213: 5399057444788300118
+    second: Medbay scan_20
+  - first:
+      213: -4875523684438683450
+    second: Medbay scan_21
+  - first:
+      213: 5175969780305629948
+    second: Medbay scan_22
+  - first:
+      213: -8613724601078726439
+    second: Medbay scan_23
+  - first:
+      213: -5134847976657617560
+    second: Medbay scan_24
+  - first:
+      213: 2598259622464242119
+    second: Medbay scan_25
+  - first:
+      213: 6081518289205647221
+    second: Medbay scan_26
+  - first:
+      213: 2277675884802412848
+    second: Medbay scan_28
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +154,616 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Medbay scan_0
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5539bca316421f7a0800000000000000
+      internalID: -6345250399971470507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ecce8460ed4e690800000000000000
+      internalID: -7573684554755682694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0f97460645e3390800000000000000
+      internalID: -7836733528598777675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_3
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30c0d087c5c10550800000000000000
+      internalID: 6125394428850913340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_4
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c772d299bf9dbb330800000000000000
+      internalID: 3727812791209109372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_5
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b1bedd3202e8470800000000000000
+      internalID: 8398685693511670644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_6
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a88adedfccc5180800000000000000
+      internalID: -9125193353973429664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_7
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393bed8f91536bf70800000000000000
+      internalID: 9202601274243986323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_8
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed79dde4ad8e898c0800000000000000
+      internalID: -3992185045340284962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_9
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458772c945a6d18d0800000000000000
+      internalID: -2874024075562878892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_10
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 7
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f6d3c263039de90800000000000000
+      internalID: -7000511136542134512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 162
+        width: 82
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe31e75887a9ed50800000000000000
+      internalID: 6767124119132651259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 161
+        width: 85
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43532f24dcbc24cd0800000000000000
+      internalID: -2575271954450598604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_13
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 161
+        width: 85
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd1cd86ba8f7c320800000000000000
+      internalID: 2578302726775250418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_14
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 160
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce9b7e178fa154f0800000000000000
+      internalID: -841698660474708280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_15
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 160
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813b0328952080fd0800000000000000
+      internalID: -2375646219978362088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_16
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 160
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9e38242058e1b20800000000000000
+      internalID: 3107067037684591050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_17
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 160
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fe24f4b9748f880800000000000000
+      internalID: -8577026757951819936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_18
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 160
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b64146839b3faaf0800000000000000
+      internalID: -383021938504546638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_19
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 160
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ac1e90a640ed4c0800000000000000
+      internalID: -4260963343967073641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_20
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 160
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659e88ef32e4dea40800000000000000
+      internalID: 5399057444788300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_21
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 160
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c057076a09a65cb0800000000000000
+      internalID: -4875523684438683450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_22
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 160
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2164b771db4d740800000000000000
+      internalID: 5175969780305629948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_23
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 160
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0c8afdc17e57880800000000000000
+      internalID: -8613724601078726439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_24
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 160
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d70b788fa5db8b0800000000000000
+      internalID: -5134847976657617560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_25
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 103
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1c8374c5fde0420800000000000000
+      internalID: 2598259622464242119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_26
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 102
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577d42ba9a4e56450800000000000000
+      internalID: 6081518289205647221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_27
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 27
+        width: 91
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bb2ba5724b27370800000000000000
+      internalID: 8318909542825114469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medbay scan_28
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 217
+        width: 91
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0311f1b462eeb9f10800000000000000
+      internalID: 2277675884802412848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
