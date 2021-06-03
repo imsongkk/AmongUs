@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-git-slack test
-=======
-git-slack test
-network
->>>>>>> network
+as
