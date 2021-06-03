@@ -7,6 +7,8 @@ public class ConstManager : MonoBehaviour
     private static ConstManager instance;
 	public const int TOP_MENU_COUNT = 2;
 	public const int CONTROL_COUNT = 2;
+	public const int defaultImposterCount = 1;
+	public const int defaultMaxPlayerCount = 4;
 	public static Color highlightedColor = new Color(57, 248, 75, 1);
 	public static ConstManager Instance
 	{

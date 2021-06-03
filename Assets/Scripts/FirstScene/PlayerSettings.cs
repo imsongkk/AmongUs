@@ -21,4 +21,5 @@ public class PlayerSettings : MonoBehaviour
 	public static controllState fcState = controllState.MOUSE;
 	public static float EffectSound { get; set; }
 	public static float BGMSound { get; set; }
+	public static string nickname;
 }
