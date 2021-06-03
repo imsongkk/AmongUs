@@ -9,10 +9,6 @@ public class MainMenu : MonoBehaviour
 	public GameObject settingMenu;
 	public Animator anim;
 
-	public void OnSetting()
-	{
-		settingMenu.SetActive(true);
-	}
 	public void OnPractice()
 	{
 		SceneManager.LoadScene("MainScene");
