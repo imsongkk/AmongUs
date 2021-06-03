@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class VentInteract : InteractableThing
 {
-	public void Play()
+	private PlayerMove player;
+	private Animator playerAnim;
+	private Animator ventAnim;
+	private GameObject vent;
+	private void Start()
 	{
-		print("SSS");
+		player = GameObject.Find("Player").GetComponent<PlayerMove>();
+		playerAnim = player.gameObject.GetComponent<Animator>();
 	}
 	public override void Interact()
 	{
-		print("GO HOME");
+		playerAnim.SetTrigger("PlayerUseVent");
+		vent = player.targetObject;
+		ventAnim = vent.GetComponent<Animator>();
+		ventAnim.SetTrigger("PlayerUseVent");
 	}
 }

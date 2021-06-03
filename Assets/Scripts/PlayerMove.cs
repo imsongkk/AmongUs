@@ -10,6 +10,9 @@ public class PlayerMove : MonoBehaviour
     public bool isRight = true;
     private Animator anim;
     public GameObject map;
+    [HideInInspector]
+    public InteractableThing target;
+    public GameObject targetObject; // Interactable한 물체가 담긴다.
 
     void Start()
     {
@@ -18,6 +21,16 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         Move();
+        //Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
+        if (hit.collider != null)
+        {
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+			{
+                // 
+			}
+        }
     }
 	private void Move()
 	{
@@ -46,21 +59,19 @@ public class PlayerMove : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{  
-        InteractableThing target = collision.gameObject.GetComponent<InteractableThing>();
-        print(target.gameObject.name);
+        target = collision.gameObject.GetComponent<InteractableThing>();
         if (target == null)
-            print("SAD");
-        else
-            print("HAPPY");
+            return;
+        targetObject = collision.gameObject;
         target.PlayerEncounter(true);
-        target.Interact();
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-        InteractableThing target = collision.gameObject.GetComponent<InteractableThing>();
+        target = collision.gameObject.GetComponent<InteractableThing>();
         if (target == null)
             return;
+        targetObject = collision.gameObject;
         target.PlayerEncounter(false);
     }
 }

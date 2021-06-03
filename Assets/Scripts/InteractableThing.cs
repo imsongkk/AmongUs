@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public abstract class InteractableThing : MonoBehaviour
 {
-	private Button useButton;
-	private bool isPlayerInArea = false;
+	public Button useButton;
+	public bool isPlayerInArea = false;
 	public InteractableThing Action; // 실제 InteractableThing을 상속받는 어떤 행위(게임오브젝트)들이 담긴다.
 	private void Awake()
 	{

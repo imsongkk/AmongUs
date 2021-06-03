@@ -14,6 +14,15 @@ TextureImporter:
   - first:
       213: -6372900784229805223
     second: map
+  - first:
+      213: 3764632526041196119
+    second: vent
+  - first:
+      213: -5417227165103998207
+    second: sabotage
+  - first:
+      213: -8782198175206606894
+    second: kill
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -190,6 +199,69 @@ TextureImporter:
       bones: []
       spriteID: 9539c277088ee87a0800000000000000
       internalID: -6372900784229805223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vent
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 288
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75621982659ae3430800000000000000
+      internalID: 3764632526041196119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sabotage
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 288
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b3164589422d4b0800000000000000
+      internalID: -5417227165103998207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kill
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 288
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7f9bb2a4d5f1680800000000000000
+      internalID: -8782198175206606894
       vertices: []
       indices: 
       edges: []
