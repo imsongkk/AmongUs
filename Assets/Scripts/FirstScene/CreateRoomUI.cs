@@ -65,6 +65,15 @@ public class CreateRoomUI : MonoBehaviour
                 maxPlayerCountButtons[i].image.color = new Color(1f, 1f, 1f, 0f);
         }
     }
+
+    public void CreateRoom()
+	{
+        var manager = AmongUsRoomManager.singleton;
+        // 방 설정 작업 처리
+        //
+        //
+        manager.StartHost();
+	}
 }
 
 public class CreateGameRoomData

@@ -518,13 +518,15 @@ MonoBehaviour:
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 0}
+  playerPrefab: {fileID: 4228152864062396924, guid: ee4093330298fb24782f9b0cd80ba5a8,
+    type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
   showRoomGUI: 1
   minPlayers: 1
-  roomPlayerPrefab: {fileID: 0}
+  roomPlayerPrefab: {fileID: 1868239509389962650, guid: f6794aec38c50a446b1fca6e5c28700a,
+    type: 3}
   RoomScene: Assets/Scenes/GameRoom.unity
   GameplayScene: Assets/Scenes/MainScene.unity
   _allPlayersReady: 0
@@ -13039,7 +13041,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1291894282}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 725980788}
+        m_MethodName: OnClickGameRoomButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1291894282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15387,7 +15400,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1699613073}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 256658923}
+        m_MethodName: CreateRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1699613073
 MonoBehaviour:
   m_ObjectHideFlags: 0
