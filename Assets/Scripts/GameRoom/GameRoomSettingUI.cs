@@ -12,9 +12,8 @@ public class GameRoomSettingUI : SettingUI
 		else // 클라이언트라면
 			manager.StopClient();
 	}
-
-	new private void OnEnable()
-	{
-		
-	}
+    private void OnEnable()
+    {
+		UpdateControlButtonColor((int)PlayerSettings.cState);
+    }
 }

@@ -17,7 +17,6 @@ public class SettingUI : MonoBehaviour
 
 	private void OnEnable()
 	{
-		print("A");
 		UpdateTopButton((int)PlayerSettings.fmState);
 		topMenu[(int)PlayerSettings.mState].gameObject.SetActive(true);
 		UpdateControlButton((int)PlayerSettings.cState);
@@ -47,7 +46,7 @@ public class SettingUI : MonoBehaviour
 		UpdateControlButtonColor(idx);
 		PlayerSettings.cState = (PlayerSettings.controllState)idx;
 	}
-	private void UpdateTopButtonColor(int idx)
+	protected void UpdateTopButtonColor(int idx)
 	{
 		if (PlayerSettings.mState == (PlayerSettings.menuState)idx) // 선택한 메뉴가 이미 선택되어있으면
 		{
@@ -58,7 +57,7 @@ public class SettingUI : MonoBehaviour
 		topMenuButton[current].image.color = Color.white;
 		topMenuButton[idx].image.color = Color.green;
 	}
-	private void UpdateControlButtonColor(int idx)
+	protected void UpdateControlButtonColor(int idx)
 	{
 		if (PlayerSettings.cState == (PlayerSettings.controllState)idx) // 선택한 메뉴가 이미 선택되어있으면
 		{
