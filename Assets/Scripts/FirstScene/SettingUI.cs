@@ -17,6 +17,7 @@ public class SettingUI : MonoBehaviour
 
 	private void OnEnable()
 	{
+		print("A");
 		UpdateTopButton((int)PlayerSettings.fmState);
 		topMenu[(int)PlayerSettings.mState].gameObject.SetActive(true);
 		UpdateControlButton((int)PlayerSettings.cState);
