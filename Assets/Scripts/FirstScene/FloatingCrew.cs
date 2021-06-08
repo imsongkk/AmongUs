@@ -35,13 +35,4 @@ public class FloatingCrew : MonoBehaviour
         transform.position += direction * floatingSpeed * Time.deltaTime;
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, 0f, rotateSpeed));
     }
-	private void OnTriggerEnter2D(Collider2D collision)
-	{
-        print("Enter");
-	}
-
-	private void OnTriggerExit2D(Collider2D collision)
-	{
-        print("Exit");
-	}
 }

@@ -32,6 +32,7 @@ public class CharacterMover : NetworkBehaviour
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
         if (hasAuthority)
@@ -60,6 +61,7 @@ public class CharacterMover : NetworkBehaviour
 	{
 		if(hasAuthority && isMoveable)
 		{
+            bool isStopped = true;
             if(PlayerSettings.cState == PlayerSettings.controllState.KEYBOARDMOUSE)
 			{
                 Vector3 dir = Vector3.ClampMagnitude(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f), 1f);
@@ -68,6 +70,7 @@ public class CharacterMover : NetworkBehaviour
                 else if (dir.x > 0f)
                     transform.localScale = new Vector3(playerXSize, playerYSize, 1f);
                 transform.position += dir * speed * Time.deltaTime;
+                isStopped = dir.magnitude == 0f;
             }
             else
 			{
@@ -79,8 +82,10 @@ public class CharacterMover : NetworkBehaviour
                     else if (dir.x > 0f)
                         transform.localScale = new Vector3(playerXSize, playerYSize, 1f);
                     transform.position += dir * speed * Time.deltaTime;
+                    isStopped = dir.magnitude == 0f;
                 }
 			}
+            anim.SetBool("isStopped", isStopped);
             /*
              * 
             if(inRange())
