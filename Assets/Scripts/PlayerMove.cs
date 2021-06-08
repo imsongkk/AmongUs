@@ -21,7 +21,6 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         Move();
-        //Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
         if (hit.collider != null)

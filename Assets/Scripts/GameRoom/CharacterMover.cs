@@ -14,7 +14,8 @@ public class CharacterMover : NetworkBehaviour
     public float playerXSize = 0.5f;
     public float playerYSize = 0.5f;
 
-    private Vector3 clickPosition;
+    //private Vector3 dir = Vector3.zero;
+    private Vector3 clickPosition = Vector3.zero;
 
     private void Start()
     {
@@ -35,25 +36,50 @@ public class CharacterMover : NetworkBehaviour
 
     private bool inRange()
     {
-        if (anim.GetBool("isStopped") || Vector3.Distance(clickPosition, transform.position) <= 0.1f)
+        if (anim.GetBool("isStopped") || Vector3.Distance(clickPosition, new Vector3(transform.position.x, transform.position.y, -10f)) <= 0.01f)
             return true;
         return false;
     }
 
     public void Move()
 	{
-        Vector3 dir = Vector3.zero;
-        print(hasAuthority + " " + isMoveable);
 		if(hasAuthority && isMoveable)
 		{
+            if(PlayerSettings.cState == PlayerSettings.controllState.KEYBOARDMOUSE)
+			{
+                Vector3 dir = Vector3.ClampMagnitude(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f), 1f);
+                if (dir.x < 0f)
+                    transform.localScale = new Vector3(-playerXSize, playerYSize, 1f);
+                else if (dir.x > 0f)
+                    transform.localScale = new Vector3(playerXSize, playerYSize, 1f);
+                transform.position += dir * speed * Time.deltaTime;
+            }
+            else
+			{
+                if(Input.GetMouseButton(1))
+				{
+                    Vector3 dir = (Input.mousePosition - new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0f)).normalized;
+                    if (dir.x < 0f)
+                        transform.localScale = new Vector3(-playerXSize, playerYSize, 1f);
+                    else if (dir.x > 0f)
+                        transform.localScale = new Vector3(playerXSize, playerYSize, 1f);
+                    transform.position += dir * speed * Time.deltaTime;
+                }
+			}
+            /*
+             * 
             if(inRange())
             {
+                print("A");
                 anim.SetBool("isStopped", true);
+                dir = Vector3.zero;
             }
-            if (Input.GetMouseButton(1)) // 마우스 입력이 있다면 
+            if (Input.GetMouseButtonDown(1)) // 마우스 입력이 있다면 
             {
                 clickPosition = Input.mousePosition;
                 dir = (clickPosition - new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0f)).normalized;
+                clickPosition = Camera.main.ScreenToWorldPoint(clickPosition);
+                anim.SetBool("isStopped", false);
             }
             if (!isRight)
                 transform.localScale = new Vector3(-playerXSize, playerYSize, 1);
@@ -99,6 +125,7 @@ public class CharacterMover : NetworkBehaviour
                 }
                 transform.position += dir * speed * Time.deltaTime;
             }
+            */
 		}
 	}
 }
