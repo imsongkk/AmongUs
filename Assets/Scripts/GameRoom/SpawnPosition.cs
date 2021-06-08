@@ -11,7 +11,7 @@ public class SpawnPosition : MonoBehaviour
     
     public Vector3 GetSpawnPosition()
 	{
-        Vector3 pos = positions[index].position;
+        Vector3 pos = positions[index++].position;
         if (index >= positions.Length)
             index = 0;
         return pos;

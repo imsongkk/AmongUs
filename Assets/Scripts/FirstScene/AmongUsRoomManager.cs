@@ -8,8 +8,5 @@ public class AmongUsRoomManager : NetworkRoomManager
 	public override void OnRoomServerConnect(NetworkConnection conn)
 	{
 		base.OnRoomServerConnect(conn);
-		Vector3 spawnPos = FindObjectOfType<SpawnPosition>().GetSpawnPosition();
-		var player = Instantiate(spawnPrefabs[0], spawnPos, Quaternion.identity);
-		NetworkServer.Spawn(player, conn);
 	}
 }

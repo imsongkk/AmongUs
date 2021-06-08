@@ -6,8 +6,14 @@ using Mirror;
 public class CharacterMover : NetworkBehaviour
 {
     public bool isMoveable;
+
     [SyncVar]
     public float speed = 2f;
+
+    private SpriteRenderer spriteRenderer;
+
+    [SyncVar(hook = nameof(SetPlayerColor_Hook))]
+    public EPlayerColor playerColor;
 	public bool isRight = true;
 
     private Animator anim;
@@ -17,8 +23,17 @@ public class CharacterMover : NetworkBehaviour
     //private Vector3 dir = Vector3.zero;
     private Vector3 clickPosition = Vector3.zero;
 
+    public void SetPlayerColor_Hook(EPlayerColor oldColor, EPlayerColor newColor)
+	{
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.material.SetColor("_PlayerColor", PlayerColor.GetColor(newColor));
+	}
+
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
         if (hasAuthority)
         {
             anim = GetComponent<Animator>();
